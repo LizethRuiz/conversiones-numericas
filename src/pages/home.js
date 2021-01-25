@@ -1,20 +1,11 @@
 import "bootstrap/dist/css/bootstrap.min.css";
-import { Redirect } from "react-router-dom";
-import React, { useState } from "react";
-import {
-  Button,
-  InputGroup,
-  FormControl,
-  Container,
-  Row,
-  Col,
-} from "react-bootstrap";
+
+import { Button, Row, Col, Container } from "react-bootstrap";
 
 import icon from "../assets/images/mayaIcon.png";
-import forma from "../assets/images/forma.png";
 import "./styles.css";
 
-function Home() {
+function Home({ history }) {
   return (
     <div className="fondo">
       <div className="fondo-medio">
@@ -40,8 +31,10 @@ function Home() {
                   color: "white",
                   borderColor: "white",
                 }}
-                href={"http://localhost:3000/arabigo"}
-                onClick={() => {}}
+                /*                 href={"http://localhost:3000/arabigo"}
+                 */ onClick={() => {
+                  history.push("/arabigo");
+                }}
               >
                 Arábigo - Maya
               </Button>
@@ -56,8 +49,9 @@ function Home() {
                   color: "white",
                   borderColor: "white",
                 }}
-                href={"http://localhost:3000/maya"}
-                onClick={() => {}}
+                onClick={() => {
+                  history.push("/maya");
+                }}
               >
                 Maya - Arábigo
               </Button>
