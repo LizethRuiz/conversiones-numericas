@@ -1,0 +1,47 @@
+.fondo {
+  background-color: rgb(85, 9, 75);
+  display: flex;
+  flex-direction: row;
+  width: 100vw;
+  height: 100vh;
+}
+
+.fondo1 {
+  display: flex;
+  flex-direction: row;
+  width: 100vw;
+  height: 100vh;
+}
+
+.fondo-medio {
+  background-color: rgb(85, 9, 75);
+  width: 50vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  align-items: center;
+}
+.fondo-medio2 {
+  width: 50vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  align-items: center;
+}
+
+.fondo-cuarto {
+  background-color: rgb(85, 9, 75);
+  width: 25vw;
+  height: 100vh;
+  text-align: center;
+  align-items: center;
+}
+
+.imgStyle {
+  width: 100px;
+  height: 100px;
+  padding-left: 10px;
+  cursor: pointer;
+}
